@@ -110,7 +110,7 @@ def zhongchou():
         try:
             info=get_project_info(line[-1])
         except Exception as e:
-            print(line,'Error' e)
+            print(line,'Error',e)
             failed=open('failed.txt','a')
             failed.write(str(line)+'\n')
             failed.close()
